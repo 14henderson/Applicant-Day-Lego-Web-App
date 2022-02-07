@@ -1,0 +1,42 @@
+<!doctype html>  
+<html lang="en">  
+<head>  
+<title>Web Programming</title>
+   <link rel="stylesheet" href="styles.css">    
+   <script src="game.js" defer></script>
+</head>  
+<body>  
+    <div id="yearly-update">
+        <h2>Good News</h2>
+        <span id="good-news"></span>
+        <h2>Bad News</h2>
+        <span id="bad-news"></span>
+
+
+        <button onClick="nextYear()">Move on to the next year</button>
+    </div>
+
+    <div id="home">
+        <h2>Decisions & Disruptions</h2>
+        <p>Select Game Option</p>
+        <button onClick="startGame()">I am the Game Master, and am playing.</button>
+    </div>
+
+    <div id="game">
+        <h2>Year <span id="current-year"></span></h2>
+        Budget: £<span id="budget">0</span><br />
+        Available Purchases:
+        <ol id="available-cards">
+        </ol>
+        Purchased this round:
+        <ol id="purchased-cards">
+
+        </ol>
+
+        <button onClick="completeYear()">Complete Year</button>
+    </div>
+
+    
+ 
+</body>  
+</html>

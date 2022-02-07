@@ -1,0 +1,15 @@
+#game{
+    display: none;
+}
+
+#yearly-update{
+    display: none;
+    position: fixed;
+    background-color: antiquewhite;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 5%;
+    padding: 30px;
+
+}
