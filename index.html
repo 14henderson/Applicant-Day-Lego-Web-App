@@ -2,14 +2,18 @@
 <html lang="en">  
 <head>  
 <title>Web Programming</title>
-   <link rel="stylesheet" href="styles.css">    
+   <link rel="stylesheet" href="styles.css">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
    <script src="game.js" defer></script>
 </head>  
-<body>  
+<body> 
+    <div id="grey-opaque"></div>
+
     <div id="yearly-update">
-        <h2>Good News</h2>
+        <h1>Congratulations for Completing Year <span id="currentYearCongrats"></span></h1>
+        <h2 id="good-news-header">Good News</h2>
         <span id="good-news"></span>
-        <h2>Bad News</h2>
+        <h2 id="bad-news-header">Bad News</h2>
         <span id="bad-news"></span>
 
 
@@ -23,16 +27,19 @@
     </div>
 
     <div id="game">
-        <h2>Year <span id="current-year"></span></h2>
-        Budget: £<span id="budget">0</span><br />
-        Available Purchases:
+        <div id="game-header">
+            <h1>Year <span id="current-year"></span></h1>
+            Budget: £<span id="budget">0</span><br />
+        </div>
+        <hr>
+        <span class="card-list-title">Available Purchases:</span>
         <ol id="available-cards">
         </ol>
-        Purchased this round:
+        <hr>
+        <span class="card-list-title">Purchased:</span>
         <ol id="purchased-cards">
-
         </ol>
-
+        <hr>
         <button onClick="completeYear()">Complete Year</button>
     </div>
 
