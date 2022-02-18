@@ -99,11 +99,11 @@ function buyCard(ID){
         buildVariables();
         buildPurchased();
         buildAvailable();
-    }
-    if(ID == 1){
-        assetAudit();
-    }else if(ID == 0){
-        threatAssessment();
+        if(ID == 1){
+            assetAudit();
+        }else if(ID == 0){
+            threatAssessment();
+        }
     }
 }
 
