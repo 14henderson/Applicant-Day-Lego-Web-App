@@ -1,8 +1,22 @@
 #game{
     display: none;
+    padding: 20px;
 }
 #game-header{
     text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+#home{
+    padding: 20px;
+    text-align: center;
+}
+
+#update-content, #asset-audit-text, #threat-assessment-text, #congratulations-text{
+    padding: 20px;
 }
 
 #grey-opaque{
@@ -15,19 +29,20 @@
     background-color: rgba(200, 200, 200, 0.6);
 }
 
-#yearly-update{
+#yearly-update, #year-intro, #asset-audit-container, #threat-assessment-container, #congratulations-container{
     display: none;
     position: fixed;
     background-color:azure;
     width: 80%;
     height: 80%;
-    left: 6%;
+    left: 10%;
     top: 5%;
-    padding: 30px;
     border-radius: 15px;
     border: 2px solid black;
     overflow:auto;
 }
+
+
 
 p{
     font-size: 2vh;
@@ -60,6 +75,16 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     color: #1a1a1a;
 }
+
+#year-header-intro{
+    font-size: 7vh;
+    text-align: center;
+}
+#year-intro{
+    text-align: center;
+}
+
+
 
 button{
     border-radius: 4px;

@@ -1,7 +1,7 @@
 <!doctype html>  
 <html lang="en">  
 <head>  
-<title>Web Programming</title>
+<title>Decisions & Disruptions</title>
    <link rel="stylesheet" href="styles.css">  
    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
    <script src="game.js" defer></script>
@@ -10,15 +10,68 @@
     <div id="grey-opaque"></div>
 
     <div id="yearly-update">
-        <h1>Congratulations for Completing Year <span id="currentYearCongrats"></span></h1>
-        <h2 id="good-news-header">Good News</h2>
-        <span id="good-news"></span>
-        <h2 id="bad-news-header">Bad News</h2>
-        <span id="bad-news"></span>
+        <div id="update-content">
+            <h1>Congratulations for Completing Year <span id="currentYearCongrats"></span></h1>
+            <h2 id="good-news-header">Good News</h2>
+            <span id="good-news"></span>
+            <h2 id="bad-news-header">Bad News</h2>
+            <span id="bad-news"></span>
 
 
-        <button onClick="nextYear()">Move on to the next year</button>
+            <button onClick="initiateNextYear()">Move on to the next year</button>
+        </div>
     </div>
+
+
+    <div id="congratulations-container">
+        <div id="congratulations-text">
+            <h1>Congratulations on completing Decisions & Disruptions</h1>
+            <p>After 4 years, your bussiness is left in the following state: <b><span id="final-status"></span></b></p>
+            <p>What we want you to take away from the game</p>
+            <ul>
+                <li>Cyber security doesn't have to be expensive</li>
+                <li>Take responsibility to keep up to date with current threats</li>
+                <li>Cyber and Physical security go hand in hand. Cyer security can affect the physical world and physical security can affect the cyber world</li>
+                <li>Get the basics right - anti-virus, firewalls, staff training, understand your own company's weakneses, patching, and protect your data!</li>
+                <li>No system is 100% secure. It's importnat to have a plan to make your response to an attack efficient and effective. We can help with guidlines to create one, or come and test your Business Continuity or Disaster Recovery plans.
+            </ul>
+            <button onClick="location.reload()">To Menu</button>
+        </div>
+    </div>
+
+
+    <div id="asset-audit-container">
+        <div id="asset-audit-text">
+            <h1>Asset Audit</h1>
+            <p>You hire and external team who come in and spend the entire day at each site assessing your weakneses. They come back with the following assessment.</p>
+            <ul>
+                <li>The company's PC's run on an old, insecure operating system long past its end of life. They can be upgraded to the most recent, supported operating system via the <b>PC Upgrade</b>. This will include continuour support and security patches.</li>
+                <li>The server's operating systems are also outdated and suffer from known vulnerabilities. These can be patched via the <b>Server Upgrade</b>. This also includes ongoing support and security patches.</li>
+                <li>The SCADA controller has never been updated since its deployment 20 years ago. It is vulnerable to very simple exploits. A <b>Controller Upgrade</b> will patch all known vulerabilities.</li>
+                <li>The company has never encrypted any of its data - everything is stored in the clear. <b>PC Encryption</b> will encrypt any data help on the PC's. <b>Database Encryption</b> will encrypt the entire contents of the two databases.</li>
+            </ul>
+            <button onClick="closeWindows()">Continue</button>
+        </div>
+    </div>
+
+    <div id="threat-assessment-container">
+        <div id="threat-assessment-text">
+            <h1>Threat Assessment</h1>
+            <p>A consultant conducts a threat analysis and identifies three different threat vectors.</p>
+            <ul>
+                <li><b>Script Kiddies.</b> They have low computer skills and tend to use tools built by others which are easily available on the dark web. They tend to be motivated by the fun aspect of hacking, more than anything else. Due to the number of such low killed attackers and the wide availability of their techniques, their attacks are expected to be targeting the company's infrastructure at all time. They are probably at work as we speak!</li>
+                <li><b>Organised Criminal Groups.</b>They have high skills and clear motivations. They will use advanced techniques such as phishing, remote access tools (RATs) and advanced malware. They have specific targets, which make their attacks less likely. However, it would be surprising if at least one of them did not take interest in the company at some point.</li>
+                <li><b>Nation State Attackers.</b> They use cutting edge tools that even OCG's don't have access to. They conuct espionage and cyber warfare. Should one of them target the company, there is very little that you could do to resist them.</li>
+            </ul>
+            <button onClick="closeWindows()">Continue</button>
+        </div>
+    </div>
+
+    <div id="year-intro">
+        <h1 id="year-header-intro">Year 1</h1>
+        <button onClick="nextYear()">Begin</button>
+    </div>
+
 
     <div id="home">
         <h2>Decisions & Disruptions</h2>
