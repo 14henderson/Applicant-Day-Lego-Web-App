@@ -152,7 +152,7 @@ function completeYear(){
     document.getElementById("currentYearCongrats").innerHTML = currentYear;
     if(currentYear == 1){
         if(3 in purchesThisRound) goodMessage += "<p> You organise a FALCON training/awareness day, which gives you and your staff advice on all things cyber.  You cover things like strong passwords, phishing, not clicking on links and lots of other practical advice.  As a result your staff are much more efficient at protecting your company.  Good job!  A word of warning though!  Your staff are still human and as such, will still make the occasional mistake. </p>";
-        if(2 in purchesThisRound) goodMessage += "<p> It's a good job that you've got one of the basic forms of protection in early.  Although you don't realise it, your Anti-Virus stops a ransomware from infecting your systems. You've just saved a lot of work and money.</p>";
+        if(2 in purchesThisRound) goodMessage += "<p> It's a good job that you've got one of the basic forms of protection in early now you don't have children those little bastards.  Although you don't realise it, your Anti-Virus stops a ransomware from infecting your systems. You've just saved a lot of work and money.</p>";
         if(9 in purchesThisRound) goodMessage += "<p> The plant firewall intercepts a number of scanning attempts from all over the world.  Apparently, there are people out there very interested in knowing more about your plant.</p>";
         if(8 in purchesThisRound) goodMessage += "<p> A sudden surge of traffic is detected as a number of machines from all around the world are trying to flood your office network with requests.  Fortunately, your network administrator can quickly update the filtering rules of the office firewall and the attack does not cause much disruption </p>";
     }else if(currentYear == 2){
@@ -272,7 +272,7 @@ function completeYear(){
             end = true;
         }
         if(11 in availableCards){
-            badMessage = "<p> Due to the weaknesses in your server, someone is able to remotely log in.  They steal all your files, including details on contracts and human resources.  You fail to notify the data subjects without undue delay and the regulators within the 72 hour time limit.  The resulting investigation uncovers that you had previously had weaknesses identified with you server, which you failed to act on it.  The ICO decide to make an example of you and fine you 5 million euros.  This fine, in combination with the lost contract files and negative publicity causes you to permanently shut down.  It's unlikely you'll ever work in a senior role again. </p>";
+            badMessage = "<p> Due to the weaknesses in your server, someone is able to remotely log in.  They steal all your files, including details on contracts and human resources.  You fail to notify the data subjects without undue delay and the regulators within the 72 hour time limit.  The resulting investigation uncovers that you previously had weaknesses identified with you server, which you failed to act on it.  The ICO decide to make an example of you and fine you 5 million euros.  This fine, in combination with the lost contract files and negative publicity causes you to permanently shut down.  It's unlikely you'll ever work in a senior role again. </p>";
             end = true;
         }
 
